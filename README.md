@@ -27,10 +27,12 @@
 - Supply Chain Attack
 
 ## Rekomendasi
-- **Semgrep**: *Terraform Module and Resource Naming Convention*
+- **Semgrep**: *Simple Terraform Code Analysis*
 
-  Hanya Semgrep yang saat ini mampu memastikan nama *module* dan *resource* mengikuti standard yang dibuat.
+  Hanya `Semgrep` yang saat ini mampu memastikan nama *module* dan *resource* mengikuti standard yang dibuat.
 
-- **Checkov**: *Advanced Terraform Static Code Analysis*
+### Catatan
 
-  Checkov dengan dukungan komunitas yang luas, sudah sangat banyak built-in rules yang tersedia. 
+`Checkov` juga bagus untuk *More-customized Terraform Code Analysis*. Tetapi, berdasarkan dokumentasi [berikut](https://www.checkov.io/3.Custom%20Policies/Custom%20Policies%20Overview.html), kita perlu melakukan langkah-langkah tambahan sebelum bisa menggunakan *custom policy* yang dibuat. `Terraform-compliance` bisa menjadi pilihan lain.
+
+Namun, hal-hal yang sudah bersifat **perlu diperiksa saat `runtime`**. Pertimbangkan menggunakan _rules_engine_ yang bisa secara periodik memeriksa infrastruktur yang berjalan saat itu, seperti [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian).
