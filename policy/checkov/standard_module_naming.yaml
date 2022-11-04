@@ -1,0 +1,15 @@
+---
+# UNTESTED: Not sure will running well or not.
+metadata:
+  name: "Ensure all modules are following standard module naming convention"
+  id: "CUSTOM_CKV_AWS_3"
+  category: "CONVENTION"
+definition:
+  cond_type: "attribute"
+  resource_types: ["all"]
+  attribute: "__module_address__"
+  operator: "starting_with"
+  value: 
+    - bucket
+    - registry
+    - network
