@@ -2,14 +2,14 @@
 
 ## Tabel Perbandingan
 
-|             | ConfTest                     | Terraform Compliance | Sentinel        | Semgrep           | Checkov           |
-|-------------|------------------------------|----------------------|-----------------|-------------------|-------------------|
-| Bahasa      | Rego Open Policy Agent (OPA) | Custom               | Sentinel        | YAML              | YAML              |
-| Komunitas   | Sedang                       | Kecil                | Kecil           | Luas              | Luas              |
-| Popularitas | Sedang                       | Rendah               | Sedang          | Tinggi            | Tinggi            |
-| Hak Akses   | Tinggi                       | Tinggi               | Tinggi          | Rendah            | Tinggi            |
-| Harga       | Gratis                       | Gratis               | Berbayar        | Gratis & Berbayar | Gratis & Berbayar |
-| Kemudahan   | Sulit                        | Mudah                | Belum diketahui | Mudah             | Mudah             |
+|                 | **ConfTest**                 | **Terraform Compliance** | **Sentinel**    | **Semgrep**       | **Checkov**       |
+|-----------------|------------------------------|--------------------------|-----------------|-------------------|-------------------|
+| **Bahasa**      | Rego Open Policy Agent (OPA) | Custom                   | Sentinel        | YAML              | YAML              |
+| **Komunitas**   | Sedang                       | Kecil                    | Kecil           | Luas              | Luas              |
+| **Popularitas** | Sedang                       | Rendah                   | Sedang          | Tinggi            | Tinggi            |
+| **Hak Akses**   | Tinggi                       | Tinggi                   | Tinggi          | Rendah            | Tinggi            |
+| **Harga**       | Gratis                       | Gratis                   | Berbayar        | Gratis & Berbayar | Gratis & Berbayar |
+| **Kemudahan**   | Sulit                        | Mudah                    | Belum diketahui | Mudah             | Mudah             |
 
 ## Spesifikasi
 
