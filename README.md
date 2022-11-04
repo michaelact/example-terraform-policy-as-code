@@ -31,8 +31,10 @@
 
   Hanya `Semgrep` yang saat ini mampu memastikan nama *module* dan *resource* mengikuti standard yang dibuat.
 
+- **Terraform-compliance**: *More-customized Terraform Code Analysis*
+
 ### Catatan
 
-`Checkov` juga bagus untuk *More-customized Terraform Code Analysis*. Tetapi, berdasarkan dokumentasi [berikut](https://www.checkov.io/3.Custom%20Policies/Custom%20Policies%20Overview.html), kita perlu melakukan langkah-langkah tambahan sebelum bisa menggunakan *custom policy* yang dibuat. `Terraform-compliance` bisa menjadi pilihan lain.
+`Checkov` juga bagus untuk *More-customized Terraform Code Analysis*. Tetapi, berdasarkan dokumentasi [berikut](https://www.checkov.io/3.Custom%20Policies/Custom%20Policies%20Overview.html), kita perlu melakukan langkah-langkah tambahan sebelum bisa menggunakan *custom policy* yang dibuat. 
 
 Namun, hal-hal yang sudah bersifat **perlu diperiksa saat `runtime`**. Pertimbangkan menggunakan _rules_engine_ yang bisa secara periodik memeriksa infrastruktur yang berjalan saat itu, seperti [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian).
