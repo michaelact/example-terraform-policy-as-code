@@ -1,0 +1,39 @@
+rules:
+  - id: module-naming-convention
+    paths:
+      exclude:
+        - ".terraform"
+    pattern-either:
+      # Resource Type
+      - patterns:
+        - pattern: |
+            module "$MODULE_NAME" { ... }
+        - metavariable-regex: 
+            metavariable: $MODULE_NAME
+            regex: ^(?!bucket|registry|network).*$
+
+      # Environment
+      - patterns:
+        - pattern: |
+            module "$MODULE_NAME" { ... }
+        - metavariable-regex: 
+            metavariable: $MODULE_NAME
+            regex: ^(?:(?!staging|production|development).)*$
+
+      # Project Codename
+      - patterns:
+        - pattern: |
+            module "$MODULE_NAME" { ... }
+        - metavariable-regex: 
+            metavariable: $MODULE_NAME
+            regex: ^(?:(?!sparta|empire|nightwolf).)*$
+    message: >
+      Ensure the Module Name follows this format: 
+      <resource-type>_<environment>_<project-codename>_<optional-additional-attrs>
+    languages:
+      - terraform
+    severity: WARNING
+    metadata:
+      technology:
+        - aws
+        - terraform

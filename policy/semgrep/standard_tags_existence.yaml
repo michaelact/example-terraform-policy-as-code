@@ -1,0 +1,47 @@
+rules:
+  - id: resource-tags-existence
+    paths:
+      exclude:
+        - ".terraform"
+    patterns:
+      - pattern: |
+          resource $RESOURCE_TYPE $RESOURCE_NAME { ... }
+      - pattern-not: |
+          resource $RESOURCE_TYPE $RESOURCE_NAME {
+            ...
+            tags = {
+              Terraform   = true
+            }
+          }
+    message: Ensure resource tag contains Project, Environment key
+    languages:
+      - terraform
+    severity: WARNING
+    metadata:
+      technology:
+        - aws
+        - terraform
+
+  - id: module-tags-existence
+    paths:
+      exclude:
+        - ".terraform"
+    patterns:
+      - pattern: |
+          module "$MODULE_NAME" { ... }
+      - pattern-not: |
+          module "$MODULE_NAME" {
+            ...
+            tags = {
+              Terraform   = true
+              ...
+            }
+          }
+    message: Ensure module tag contains Project, Environment key
+    languages:
+      - terraform
+    severity: WARNING
+    metadata:
+      technology:
+        - aws
+        - terraform

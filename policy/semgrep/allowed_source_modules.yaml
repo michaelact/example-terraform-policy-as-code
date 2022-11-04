@@ -1,0 +1,20 @@
+rules:
+  - id: prevent-supply-chain-attack
+    patterns:
+      - pattern: |
+          module "$MODULE_NAME" {
+            source = "$SOURCE_MODULE"
+            ...
+          }
+      - metavariable-regex: 
+          metavariable: $SOURCE_MODULE
+          regex: "^(?!terraform-aws-modules).*$"
+    message: Detected untrusted source modules
+    languages:
+      - terraform
+    severity: WARNING
+    metadata:
+      category: security
+      technology:
+        - aws
+        - terraform
