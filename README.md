@@ -11,6 +11,13 @@
 | Harga       | Gratis                       | Gratis               | Berbayar        | Gratis & Berbayar | Gratis & Berbayar |
 | Kemudahan   | Sulit                        | Mudah                | Belum diketahui | Mudah             | Mudah             |
 
+## Spesifikasi
+
+- **Dukungan komunitas yang kuat**: Mudah untuk mengumpulkan orang-orang yang mengerti tentang kasus dan masalah yang kita hadapi ketika menggunakan alat tersebut.
+- **Hak akses yang rendah**: Terraform state menyimpan konfigurasi-konfigurasi infrastruktur, tak jarang menyimpan secret value juga. Lebih bagus bila alat tidak membutuhkan akses ke terraform state.
+- **Aktif development**: Alat yang tidak aktif development, rawan menjadi gerbang masuk dari serangan keamanan.
+- **Mudah untuk dipelajari.**
+
 ## Studi Kasus
 
 - Naming Convention:
