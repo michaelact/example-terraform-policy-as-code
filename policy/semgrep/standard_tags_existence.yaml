@@ -13,7 +13,7 @@ rules:
               Terraform   = true
             }
           }
-    message: Ensure resource tag contains Project, Environment key
+    message: Ensure resource tag contains Terraform key
     languages:
       - terraform
     severity: WARNING
@@ -37,7 +37,7 @@ rules:
               ...
             }
           }
-    message: Ensure module tag contains Project, Environment key
+    message: Ensure module tag contains Terraform key
     languages:
       - terraform
     severity: WARNING
