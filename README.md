@@ -4,7 +4,7 @@
 
 |                 | **ConfTest**                 | **Terraform Compliance** | **Sentinel**    | **Semgrep**       | **Checkov**       |
 |-----------------|------------------------------|--------------------------|-----------------|-------------------|-------------------|
-| **Bahasa**      | Rego Open Policy Agent (OPA) | Custom                   | Sentinel        | YAML              | YAML              |
+| **Bahasa**      | Rego Open Policy Agent (OPA) | Gherkin                  | Sentinel        | YAML              | YAML              |
 | **Komunitas**   | Sedang                       | Kecil                    | Kecil           | Luas              | Luas              |
 | **Popularitas** | Sedang                       | Rendah                   | Sedang          | Tinggi            | Tinggi            |
 | **Hak Akses**   | Tinggi                       | Tinggi                   | Tinggi          | Rendah            | Tinggi            |
