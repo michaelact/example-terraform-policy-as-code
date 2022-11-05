@@ -30,7 +30,7 @@ module "network_staging_empire" {
   enable_vpn_gateway = true
 
   tags = {
-    Terraform   = true
+    Terraform   = false
     Project     = "nightwolf"
     Environment = "staging"
   }
