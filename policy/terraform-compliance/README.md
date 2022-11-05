@@ -5,7 +5,7 @@
 1. Install [terraform-compliance](https://terraform-compliance.com/pages/installation/)
 2. Pindah directory ke `/path/to/example-terraform-policy-as-code/terraform`
 3. Export plan file: `terraform plan --out tfplan.binary`
-4. Convert to json file: `tf-aws show -json tfplan.binary > tfplan.json`
+4. Convert to json file: `terraform show -json tfplan.binary > tfplan.json`
 5. Pindah directory ke `/path/to/example-terraform-policy-as-code/terraform`
 6. Jalankan: `terraform-compliance -f policy/terraform-compliance/ -p terraform/tfplan.json`
 
